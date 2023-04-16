@@ -54,6 +54,16 @@ button:hover {
     border: 1px solid black;
 }
 
+.description a {
+    color: gold;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+
 #results {
     margin-top: 20px;
 }
