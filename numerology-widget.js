@@ -1,15 +1,3 @@
-document.getElementById("numerology-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const birthdate = document.getElementById("birthdate").value.trim();
-
-    if (!name || !birthdate) {
-        return;
-    }
-
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth() + 1;
 
 function reduceToSingleDigit(number) {
   return number <= 9 ? number : reduceToSingleDigit(number.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0));
@@ -76,8 +64,20 @@ function calculatePersonalMonthNumber(personalYearNumber, currentMonth) {
   return reduceToSingleDigit(personalYearNumber + currentMonth);
 }
 
+document.getElementById("numerology-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const birthdate = document.getElementById("birthdate").value.trim();
+
+    if (!name || !birthdate) {
+        return;
+    }
+
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth() + 1;
+
+    // Numerology calculations
     const lifePathNumber = calculateLifePathNumber(birthdate);
     const lifeDestinyNumber = calculateLifeDestinyNumber(name);
     const soulNumber = calculateSoulNumber(name);
@@ -104,6 +104,6 @@ function calculatePersonalMonthNumber(personalYearNumber, currentMonth) {
         <p>Personal Year Number: ${personalYearNumber}</p>
         <p>Personal Month Number: ${personalMonthNumber}</p>
     `;
-    
+
     document.getElementById("results").innerHTML = resultsHtml;
-    });
+});
