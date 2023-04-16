@@ -1,46 +1,3 @@
-document.getElementById("numerology-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    const name = document.getElementById("name").value.trim();
-    const birthdate = document.getElementById("birthdate").value.trim();
-
-    if (!name || !birthdate) {
-        return;
-    }
-
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth() + 1;
-    const lifePathNumber = calculateLifePathNumber(birthdate);
-    const lifeDestinyNumber = calculateLifeDestinyNumber(name);
-    const soulNumber = calculateSoulNumber(name);
-    const personalityNumber = calculatePersonalityNumber(name);
-    const maturityNumber = calculateMaturityNumber(lifePathNumber, lifeDestinyNumber);
-    const balanceNumber = calculateBalanceNumber(name);
-    const luckyNumber = calculateLuckyNumber(birthdate);
-    const signatureNumber = calculateSignatureNumber(name);
-    const birthdayNumber = calculateBirthdayNumber(birthdate);
-    const personalYearNumber = calculatePersonalYearNumber(birthdate, currentYear);
-    const personalMonthNumber = calculatePersonalMonthNumber(personalYearNumber, currentMonth);
-
-    const resultsHtml = `
-        <h2>Results</h2>
-        <p>Life Path Number: ${lifePathNumber}</p>
-        <p>Life Destiny Number: ${lifeDestinyNumber}</p>
-        <p>Soul Number: ${soulNumber}</p>
-        <p>Personality Number: ${personalityNumber}</p>
-        <p>Maturity Number: ${maturityNumber}</p>
-        <p>Balance Number: ${balanceNumber}</p>
-        <p>Lucky Number: ${luckyNumber}</p>
-        <p>Signature Number: ${signatureNumber}</p>
-        <p>Birthday Number: ${birthdayNumber}</p>
-        <p>Personal Year Number: ${personalYearNumber}</p>
-        <p>Personal Month Number: ${personalMonthNumber}</p>
-    `;
-    
-    document.getElementById("results").innerHTML = resultsHtml;
-    });
-    
 function reduceToSingleDigit(number) {
   return number <= 9 ? number : reduceToSingleDigit(number.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0));
 }
@@ -105,3 +62,49 @@ function calculatePersonalYearNumber(birthdate, currentYear) {
 function calculatePersonalMonthNumber(personalYearNumber, currentMonth) {
   return reduceToSingleDigit(personalYearNumber + currentMonth);
 }
+
+
+document.getElementById("numerology-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const birthdate = document.getElementById("birthdate").value.trim();
+
+    if (!name || !birthdate) {
+        return;
+    }
+
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth() + 1;
+
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth() + 1;
+    const lifePathNumber = calculateLifePathNumber(birthdate);
+    const lifeDestinyNumber = calculateLifeDestinyNumber(name);
+    const soulNumber = calculateSoulNumber(name);
+    const personalityNumber = calculatePersonalityNumber(name);
+    const maturityNumber = calculateMaturityNumber(lifePathNumber, lifeDestinyNumber);
+    const balanceNumber = calculateBalanceNumber(name);
+    const luckyNumber = calculateLuckyNumber(birthdate);
+    const signatureNumber = calculateSignatureNumber(name);
+    const birthdayNumber = calculateBirthdayNumber(birthdate);
+    const personalYearNumber = calculatePersonalYearNumber(birthdate, currentYear);
+    const personalMonthNumber = calculatePersonalMonthNumber(personalYearNumber, currentMonth);
+
+    const resultsHtml = `
+        <h2>Results</h2>
+        <p>Life Path Number: ${lifePathNumber}</p>
+        <p>Life Destiny Number: ${lifeDestinyNumber}</p>
+        <p>Soul Number: ${soulNumber}</p>
+        <p>Personality Number: ${personalityNumber}</p>
+        <p>Maturity Number: ${maturityNumber}</p>
+        <p>Balance Number: ${balanceNumber}</p>
+        <p>Lucky Number: ${luckyNumber}</p>
+        <p>Signature Number: ${signatureNumber}</p>
+        <p>Birthday Number: ${birthdayNumber}</p>
+        <p>Personal Year Number: ${personalYearNumber}</p>
+        <p>Personal Month Number: ${personalMonthNumber}</p>
+    `;
+    
+    document.getElementById("results").innerHTML = resultsHtml;
+    });
