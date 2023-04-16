@@ -103,6 +103,7 @@ document.getElementById("numerology-form").addEventListener("submit", function (
         <p>Birthday Number: ${birthdayNumber}</p>
         <p>Personal Year Number: ${personalYearNumber}</p>
         <p>Personal Month Number: ${personalMonthNumber}</p>
+        <p class="description"><a href="https://ethankg.wixsite.com/cosmicinsights" target="_blank">Learn more about your numbers here</a></p>
     `;
 
     document.getElementById("results").innerHTML = resultsHtml;
