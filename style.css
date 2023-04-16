@@ -19,9 +19,11 @@ body {
     box-sizing: border-box;
     text-align: center;
     font-size: 1.5vw;
-    width: 777px;
-    height: 777px;
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
 }
+
 
 
 h1 {
