@@ -76,9 +76,6 @@ document.getElementById("numerology-form").addEventListener("submit", function (
 
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth() + 1;
-
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth() + 1;
     const lifePathNumber = calculateLifePathNumber(birthdate);
     const lifeDestinyNumber = calculateLifeDestinyNumber(name);
     const soulNumber = calculateSoulNumber(name);
