@@ -12,39 +12,42 @@ body {
 #numerology-widget {
     display: inline-block;
     background-color: white;
-    padding: 20px;
+    padding: 80px; /* Increased from 20px */
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
+    font-size: 4rem; /* New font size */
 }
 
 h1 {
-    margin: 0 0 20px;
+    margin: 0 0 80px; /* Increased from 20px */
 }
 
 .input-container {
-    margin-bottom: 10px;
+    margin-bottom: 40px; /* Increased from 10px */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px; /* Increased from 5px */
 }
 
 input[type="text"] {
     width: 100%;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 4px solid black; /* Increased from 1px */
     outline: none;
+    font-size: inherit; /* New rule */
 }
 
 button {
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 40px 80px; /* Increased from 10px 20px */
     border: none;
     cursor: pointer;
+    font-size: inherit; /* New rule */
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
@@ -54,6 +57,15 @@ button:hover {
     border: 1px solid black;
 }
 
+#results {
+    margin-top: 80px; /* Increased from 20px */
+}
+
+.description {
+    font-style: italic;
+    margin: 0 0 80px; /* Increased from 20px */
+}
+
 .description a {
     color: gold;
     text-decoration: none;
@@ -61,9 +73,4 @@ button:hover {
 
 .description a:hover {
     text-decoration: underline;
-}
-
-
-#results {
-    margin-top: 20px;
 }
