@@ -4,50 +4,50 @@ body {
     color: black;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+#numerology-widget {
+    display: inline-block;
     background-color: white;
-    color: black;
+    padding: 20px;
     border: 1px solid black;
     box-sizing: border-box;
 }
 
 h1 {
-    text-align: center;
-    color: black;
+    margin: 0 0 20px;
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-label, input {
-    width: 100%;
+.input-container {
     margin-bottom: 10px;
 }
 
-input {
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
     border: none;
     border-bottom: 1px solid black;
-    padding: 5px 0;
+    outline: none;
 }
 
 button {
+    display: inline-block;
     background-color: black;
     color: white;
-    border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+#results {
+    margin-top: 20px;
 }
