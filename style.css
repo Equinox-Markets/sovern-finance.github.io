@@ -4,10 +4,12 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     margin: 0;
+    padding-top: 20px;
 }
+
 
 #numerology-widget {
     display: inline-block;
