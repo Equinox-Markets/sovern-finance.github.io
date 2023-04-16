@@ -12,42 +12,42 @@ body {
 #numerology-widget {
     display: inline-block;
     background-color: white;
-    padding: 40px; /* Increased from 20px */
+    padding: 2vw;
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
-    font-size: 2rem; /* New font size */
+    font-size: 1.5vw; /* Set the font size relative to the viewport width */
 }
 
 h1 {
-    margin: 0 0 20px; /* Increased from 20px */
+    margin: 0 0 1.5vw;
 }
 
 .input-container {
-    margin-bottom: 20px; /* Increased from 10px */
+    margin-bottom: 1.5vw;
 }
 
 label {
     display: block;
-    margin-bottom: 10px; /* Increased from 5px */
+    margin-bottom: 1vw;
 }
 
 input[type="text"] {
     width: 100%;
     border: none;
-    border-bottom: 2px solid black; /* Increased from 1px */
+    border-bottom: 2px solid black;
     outline: none;
-    font-size: inherit; /* New rule */
+    font-size: inherit;
 }
 
 button {
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 20px 40px; /* Increased from 10px 20px */
+    padding: 1vw 2vw;
     border: none;
     cursor: pointer;
-    font-size: inherit; /* New rule */
+    font-size: inherit;
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
@@ -58,12 +58,12 @@ button:hover {
 }
 
 #results {
-    margin-top: 40px; /* Increased from 20px */
+    margin-top: 1.5vw;
 }
 
 .description {
     font-style: italic;
-    margin: 0 0 40px; /* Increased from 20px */
+    margin: 0 0 1.5vw;
 }
 
 .description a {
@@ -73,4 +73,36 @@ button:hover {
 
 .description a:hover {
     text-decoration: underline;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  #numerology-widget {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .input-container {
+    margin-bottom: 20px;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 20px 40px;
+  }
+
+  #results {
+    margin-top: 40px;
+  }
+
+  .description {
+    margin: 0 0 40px;
+  }
 }
