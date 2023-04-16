@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFDEAD;
+    background-color: white;
     color: black;
 }
 
@@ -8,14 +8,14 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #FFDEAD;
+    background-color: white;
     color: black;
     border: 1px solid black;
 }
 
 h1 {
     text-align: center;
-    color: gold;
+    color: black;
 }
 
 form {
@@ -30,9 +30,9 @@ label, input {
 }
 
 button {
-    background-color: gold;
+    background-color: white;
     color: black;
-    border: none;
+    border: 1px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
