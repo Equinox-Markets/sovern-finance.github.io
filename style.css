@@ -4,57 +4,47 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     height: 100vh;
     margin: 0;
-    padding-top: 20px;
 }
-
 
 #numerology-widget {
     display: inline-block;
     background-color: white;
-    padding: 2vw;
+    padding: 20px;
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
-    font-size: 1.5vw;
-    width: 90%;
-    max-width: 500px;
-    margin-bottom: 20px;
 }
 
-
-
 h1 {
-    margin: 0 0 1.5vw;
+    margin: 0 0 20px;
 }
 
 .input-container {
-    margin-bottom: 1.5vw;
+    margin-bottom: 10px;
 }
 
 label {
     display: block;
-    margin-bottom: 1vw;
+    margin-bottom: 5px;
 }
 
 input[type="text"] {
     width: 100%;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     outline: none;
-    font-size: inherit;
 }
 
 button {
     display: inline-block;
     background-color: black;
     color: white;
-    padding: 1vw 2vw;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: inherit;
     transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
@@ -65,51 +55,5 @@ button:hover {
 }
 
 #results {
-    margin-top: 1.5vw;
-}
-
-.description {
-    font-style: italic;
-    margin: 0 0 1.5vw;
-}
-
-.description a {
-    color: gold;
-    text-decoration: none;
-}
-
-.description a:hover {
-    text-decoration: underline;
-}
-
-/* Media query for larger screens */
-@media (min-width: 1024px) {
-  #numerology-widget {
-    font-size: 1.2rem;
-    padding: 20px;
-  }
-
-  h1 {
-    margin-bottom: 20px;
-  }
-
-  .input-container {
-    margin-bottom: 20px;
-  }
-
-  label {
-    margin-bottom: 10px;
-  }
-
-  button {
-    padding: 20px 40px;
-  }
-
-  #results {
-    margin-top: 40px;
-  }
-
-  .description {
-    margin: 0 0 40px;
-  }
+    margin-top: 20px;
 }
