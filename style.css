@@ -10,13 +10,12 @@ body {
     padding: 20px;
     background-color: white;
     color: black;
-    border: 1px solid black;
-    box-sizing: border-box;
+    border: 1px solid gold;
 }
 
 h1 {
     text-align: center;
-    color: black;
+    color: gold;
 }
 
 form {
@@ -30,15 +29,9 @@ label, input {
     margin-bottom: 10px;
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid black;
-    padding: 5px 0;
-}
-
 button {
-    background-color: black;
-    color: white;
+    background-color: gold;
+    color: black;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -47,7 +40,5 @@ button {
 }
 
 button:hover {
-    background-color: white;
-    color: gold;
-    border: 1px solid gold;
+    background-color: darkgoldenrod;
 }
