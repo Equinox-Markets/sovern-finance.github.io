@@ -16,8 +16,11 @@ body {
     border: 1px solid black;
     box-sizing: border-box;
     text-align: center;
-    font-size: 1.5vw; /* Set the font size relative to the viewport width */
+    font-size: 1.5vw;
+    width: 777px;
+    height: 777px;
 }
+
 
 h1 {
     margin: 0 0 1.5vw;
