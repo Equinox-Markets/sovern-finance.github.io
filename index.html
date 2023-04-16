@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="numerology-widget">
         <h1>Numerology Calculator</h1>
         <form id="numerology-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <br>
-            <label for="birthdate">Birthdate (MM/DD/YYYY):</label>
-            <input type="text" id="birthdate" pattern="\d{1,2}/\d{1,2}/\d{4}" required>
-            <br>
-            <button type="submit">Calculate</button>
+            <div class="input-container">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="birthdate">Birthdate (MM/DD/YYYY):</label>
+                <input type="text" id="birthdate" name="birthdate" pattern="(0[1-9]|1[0-2])/(0[1-9]|1\d|2\d|3[01])/((19|20)\d\d)" required>
+            </div>
+            <button type="submit" id="calculate">Calculate</button>
         </form>
         <div id="results"></div>
     </div>
