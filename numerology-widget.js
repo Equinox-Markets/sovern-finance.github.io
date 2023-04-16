@@ -1,4 +1,4 @@
-
+// Numerology calculations
 function reduceToSingleDigit(number) {
   return number <= 9 ? number : reduceToSingleDigit(number.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0));
 }
@@ -77,7 +77,7 @@ document.getElementById("numerology-form").addEventListener("submit", function (
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth() + 1;
 
-    // Numerology calculations
+    // Numerology functions
     const lifePathNumber = calculateLifePathNumber(birthdate);
     const lifeDestinyNumber = calculateLifeDestinyNumber(name);
     const soulNumber = calculateSoulNumber(name);
