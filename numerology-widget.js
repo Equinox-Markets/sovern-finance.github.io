@@ -1,5 +1,6 @@
 document.getElementById("numerology-form").addEventListener("submit", function (event) {
     event.preventDefault();
+    event.stopPropagation();
 
     const name = document.getElementById("name").value.trim();
     const birthdate = document.getElementById("birthdate").value.trim();
