@@ -50,7 +50,7 @@ function calculateSignatureNumber(name) {
 }
 
 function calculateBirthdayNumber(birthdate) {
-    const [_, day, _] = birthdate.split('/');
+    const [__, day, ___] = birthdate.split('/');
     return parseInt(day);
 }
 
