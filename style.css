@@ -48,6 +48,6 @@ button {
 
 button:hover {
     background-color: white;
-    color: gold;
-    border: 1px solid gold;
+    color: black;
+    border: 1px solid black;
 }
