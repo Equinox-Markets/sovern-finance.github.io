@@ -11,10 +11,10 @@
         <h1>Numerology Calculator</h1>
         <form id="numerology-form">
             <label for="name">Name:</label>
-            <input type="text" id="name">
+            <input type="text" id="name" required>
             <br>
             <label for="birthdate">Birthdate (MM/DD/YYYY):</label>
-            <input type="text" id="birthdate">
+            <input type="text" id="birthdate" pattern="\d{1,2}/\d{1,2}/\d{4}" required>
             <br>
             <button type="submit">Calculate</button>
         </form>
