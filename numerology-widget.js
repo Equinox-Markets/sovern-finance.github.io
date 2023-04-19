@@ -70,18 +70,18 @@ document.getElementById("numerology-form").addEventListener("submit", function (
     const personalMonthNumber = calculatePersonalMonthNumber(personalYearNumber, currentMonth);
 
     const resultsHtml = `
-<h2 class="result-title">Results</h2>
+        <h2 class="result-title">Results</h2>
         <div class="result-section">
             <div class="result">Life Path Number: ${lifePathNumber}</div>
-            <div class="result-title">Description for Life Path Number</div>
+            <div class="result-title">The Life Path Number represents your life's purpose and the path you will take to fulfill it. It is derived from your birthdate and is a key aspect of your numerology chart. This number reveals your innate abilities, strengths, and weaknesses that will shape your journey through life. By understanding your Life Path Number, you can gain insights into your personality, challenges, and opportunities, enabling you to make better choices and achieve greater success in all areas of life. Embrace the unique energy of your Life Path Number to maximize your potential and make the most of the opportunities that come your way.</div>
         </div>
         <div class="result-section">
             <div class="result">Life Destiny Number: ${lifeDestinyNumber}</div>
-            <div class="result-title">Description for Life Destiny Number</div>
+            <div class="result-title">The Life Destiny Number, also known as the Expression Number, reflects your talents, abilities, and personal potential. It is derived from the numerical values of the letters in your full birth name. This number reveals how you express yourself in the world and the best ways for you to achieve your goals. By understanding your Life Destiny Number, you can identify your natural inclinations and the skills you possess that will help you excel in your chosen endeavors. Embrace the unique energy of your Life Destiny Number to tap into your innate talents, overcome challenges, and fulfill your purpose in life.</div>
         </div>
         <div class="result-section">
             <div class="result">Soul Number: ${soulNumber}</div>
-            <div class="result-title">Description for Soul Number</div>
+            <div class="result-title">The Soul Number, also known as the Soul Urge Number, represents the inner desires and motivations that drive your actions and choices. It is derived from the numerical values of the vowels in your full birth name. This number reveals your true self, the core of your being, and the deepest desires of your heart. By understanding your Soul Number, you can gain insight into your emotional needs, passions, and the values that guide your decisions. Embrace the unique energy of your Soul Number to align your life with your soul's purpose, find inner harmony, and cultivate meaningful relationships with those who share your values and aspirations.</div>
         </div>
         <div class="result-section">
             <div class="result">Personality Number: ${personalityNumber}</div>
