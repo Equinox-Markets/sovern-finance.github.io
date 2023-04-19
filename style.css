@@ -79,12 +79,12 @@ input {
 .result {
     font-size: 24px;
     font-weight: bold;
-    color: #fffff;
+    color: #CEAB5C;
 }
 
 .result-title {
     font-size: 18px;
-    color: #CEAB5C;
+    color: #ffffff;
     margin-top: 10px;
 }
 
