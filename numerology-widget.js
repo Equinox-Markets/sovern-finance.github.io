@@ -85,26 +85,25 @@ document.getElementById("numerology-form").addEventListener("submit", function (
         </div>
         <div class="result-section">
             <div class="result">Personality Number: ${personalityNumber}</div>
-            <div class="result-title">Description for Personality Number</div>
+            <div class="result-title">The Personality Number reflects the way you present yourself to the world and how others perceive you. It is derived from the numerical values of the consonants in your full birth name. This number reveals the external aspects of your character, such as your communication style, social skills, and general demeanor. By understanding your Personality Number, you can gain insight into how you interact with others and the impression you make on those around you. Embrace the unique energy of your Personality Number to enhance your relationships, build a strong personal brand, and leverage your strengths to create a positive impact in your personal and professional life.</div>
         </div>
         <div class="result-section">
             <div class="result">Maturity Number: ${maturityNumber}</div>
-            <div class="result-title">Description for Maturity Number</div>
+            <div class="result-title">The Maturity Number represents the wisdom and personal growth you will achieve later in life, usually after the age of 30 or 40. It is derived by adding your Life Path Number and Life Destiny Number together and then reducing the sum to a single digit. This number reveals the traits and abilities that will emerge as you mature, guiding you toward a more fulfilling and purposeful existence. By understanding your Maturity Number, you can gain insight into the future direction of your personal and spiritual growth. Embrace the unique energy of your Maturity Number to make the most of your later years, achieve your aspirations, and find greater contentment and understanding of yourself and the world around you.</div>
         </div>
         <div class="result-section">
             <div class="result">Balance Number: ${balanceNumber}</div>
-            <div class="result-title">Description for Balance Number</div>
+            <div class="result-title">The Balance Number represents your ability to maintain harmony and equilibrium during challenging times in your life. It is derived from the numerical value of the first initial of your full birth name. This number provides guidance on how to best cope with difficult situations and make decisions that will restore balance and well-being. By understanding your Balance Number, you can gain insight into the most effective ways to handle stress, resolve conflicts, and navigate emotional turmoil. Embrace the unique energy of your Balance Number to foster resilience, adaptability, and inner peace, allowing you to face life's challenges with confidence and grace.</div>
         </div>
         <div class="result-section">
             <div class="result">Personal Year Number: ${personalYearNumber}</div>
-            <div class="result-title">Description for Personal Year Number</div>
+            <div class="result-title">The Personal Year Number represents the unique energy and opportunities that a particular year holds for you. It is derived by adding your birth month, birth day, and the current calendar year together, then reducing the sum to a single digit. This number provides insight into the themes, challenges, and potential growth areas you may encounter during the year. By understanding your Personal Year Number, you can align your actions and decisions with the prevailing energy to maximize your success and personal growth. Embrace the unique energy of your Personal Year Number to make the most of the opportunities it brings, overcome obstacles, and achieve your goals in the year ahead.</div>
         </div>
         <div class="result-section">
             <div class="result">Personal Month Number: ${personalMonthNumber}</div>
-            <div class="result-title">Description for Personal Month Number</div>
+            <div class="result-title">The Personal Month Number represents the specific energy and opportunities that a particular month holds for you within the context of your Personal Year Number. It is derived by adding your Personal Year Number and the current calendar month together, then reducing the sum to a single digit. This number provides insight into the monthly themes, challenges, and potential growth areas you may encounter. By understanding your Personal Month Number, you can align your actions and decisions with the prevailing energy to maximize your success and personal growth on a month-to-month basis. Embrace the unique energy of your Personal Month Number to make the most of the opportunities it brings, navigate challenges, and achieve your short-term goals within the framework of your larger annual journey.</div>
         </div>
-        <p class="description"><a href="https://hiddenstarpaths.com/blog" target="_blank">Learn More About Your Numbers Here</a></p>
-        <p class="description">Feel Free To Use Our Search bar</p>
+        <p class="description"><a href="https://hiddenstarpaths.com/blog" target="_blank">Learn More About Your Numbers</a></p>
     `;
 
     document.getElementById("results").innerHTML = resultsHtml;
