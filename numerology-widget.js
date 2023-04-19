@@ -70,16 +70,40 @@ document.getElementById("numerology-form").addEventListener("submit", function (
     const personalMonthNumber = calculatePersonalMonthNumber(personalYearNumber, currentMonth);
 
     const resultsHtml = `
-        <h2>Results</h2>
-        <p>Life Path Number: ${lifePathNumber}</p>
-        <p>Life Destiny Number: ${lifeDestinyNumber}</p>
-        <p>Soul Number: ${soulNumber}</p>
-        <p>Personality Number: ${personalityNumber}</p>
-        <p>Maturity Number: ${maturityNumber}</p>
-        <p>Balance Number: ${balanceNumber}</p>
-        <p>Personal Year Number: ${personalYearNumber}</p>
-        <p>Personal Month Number: ${personalMonthNumber}</p>
-        <p class="description"><a href="https://ethankg.wixsite.com/cosmicinsights" target="_blank">Learn More About Your Numbers Here</a></p>
+<h2 class="result-title">Results</h2>
+        <div class="result-section">
+            <div class="result">Life Path Number: ${lifePathNumber}</div>
+            <div class="result-title">Description for Life Path Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Life Destiny Number: ${lifeDestinyNumber}</div>
+            <div class="result-title">Description for Life Destiny Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Soul Number: ${soulNumber}</div>
+            <div class="result-title">Description for Soul Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Personality Number: ${personalityNumber}</div>
+            <div class="result-title">Description for Personality Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Maturity Number: ${maturityNumber}</div>
+            <div class="result-title">Description for Maturity Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Balance Number: ${balanceNumber}</div>
+            <div class="result-title">Description for Balance Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Personal Year Number: ${personalYearNumber}</div>
+            <div class="result-title">Description for Personal Year Number</div>
+        </div>
+        <div class="result-section">
+            <div class="result">Personal Month Number: ${personalMonthNumber}</div>
+            <div class="result-title">Description for Personal Month Number</div>
+        </div>
+        <p class="description"><a href="https://hiddenstarpaths.com/blog" target="_blank">Learn More About Your Numbers Here</a></p>
         <p class="description">Feel Free To Use Our Search bar</p>
     `;
 
