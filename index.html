@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="numerology-widget">
+    <div id="numerology-widget" class="container">
         <h1>Numerology Calculator</h1>
         <form id="numerology-form">
             <div class="input-container">
@@ -18,9 +18,9 @@
                 <label for="birthdate">Birthdate (MM/DD/YYYY):</label>
                 <input type="text" id="birthdate" name="birthdate" pattern="(0[1-9]|1[0-2])/(0[1-9]|1\d|2\d|3[01])/((19|20)\d\d)" required>
             </div>
-            <button type="submit" id="calculate">Calculate</button>
+            <button type="submit" id="calculate" class="calculate-btn">Calculate</button>
         </form>
-        <div id="results"></div>
+        <div id="results" class="results-container"></div>
     </div>
     <script src="numerology-widget.js"></script>
 </body>
