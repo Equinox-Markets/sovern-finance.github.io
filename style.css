@@ -1,59 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-#numerology-widget {
-    display: inline-block;
-    background-color: white;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .input-container {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
+    font-size: 16px;
+    color: #666;
     margin-bottom: 5px;
 }
 
-input[type="text"] {
+input {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-button {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
+.calculate-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4caf50;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+.calculate-btn:hover {
+    background-color: #45a049;
 }
 
-#results {
+.results-container {
     margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
 }
